@@ -30,13 +30,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
-
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC8a5_uvyZ3DcSv0LDHQAQySpv8dkw8h34"></script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD5fstzHcKv2l15bnUsIIUjXudreitT8cg&callback=initMap" type="text/javascript"></script> -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
+       <!-- You'll be deleting this line in the course -->
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -64,6 +64,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <h2 class="orange center-text">Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
+    </div>
+    <div id = "internationalized-name" class="gray">
+      <button onclick="inName()">Internationalize</button>
     </div>
   </div>
 
@@ -126,7 +129,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('topContacts').style.display = 'none';
     }
     if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
+      document.getElementById('header').style.backgroundColor = '#000000';
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
       document.getElementById('workExperience').style.display = 'none';
